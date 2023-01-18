@@ -1,3 +1,70 @@
-.hello {
-    color: red;
-  }
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  text-align: left;
+}
+
+#refresh-img {
+  margin-top: 20px;
+}
+
+#publish {
+  background-color: #fff;
+  width: 60%;
+  height: 60px;
+  border: 2px solid #d3d3d3;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#publish > input {
+  border: none;
+  outline: none;
+  font-style: italic;
+  width: 50%;
+  height: 40px;
+  font-size: 16px;
+}
+
+.list-window {
+  background-color: #fff;
+  border: 3px solid rgba(224, 214, 204, 0.7);
+  box-shadow: 2px 2px #d3d3d3;
+  width: 60%;
+  padding: 10px;
+}
+
+.entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 97%;
+  height: 40px;
+  padding: 8px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.boxes {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+#clear-done {
+  width: 938px;
+  height: 50px;
+  color: gray;
+  font-size: 20px;
+}

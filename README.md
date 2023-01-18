@@ -64,7 +64,7 @@ After you're finished please remove all the comments and instructions!
 
 > Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**[My-To-Do-List]** is a project to dynamically build a to do list using Javascript and Webpack.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -99,8 +99,8 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
+- **[Webpack configured]**
+- **[Dynamic build of list]**
 - **[key_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -205,11 +205,11 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Alwyn Androvelle**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/thoth1111)
+- Twitter: [@twitterhandle](https://twitter.com/androvelle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/alwyn-androvelle-simiyu/)
 
 👤 **Author2**
 
@@ -225,8 +225,8 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
+- [ ] **[Dynamic Addition and Removal of list items]**
+- [ ] **[List interactivity]**
 - [ ] **[new_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
