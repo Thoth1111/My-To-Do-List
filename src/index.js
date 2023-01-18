@@ -1,4 +1,17 @@
+import _ from 'lodash';
 import './style.css';
+import Thirdicon from './images/more-vertical.svg';
+import Firsticon from './images/refresh-cw.svg';
+import Secondicon from './images/corner-down-left.svg'
+
+const refreshDiv = document.querySelector('#refresh-img');
+const enterDiv = document.querySelector('#enter-img');
+const refreshImg = new Image();
+const enterImg = new Image();
+refreshImg.src = Firsticon;
+enterImg.src = Secondicon;
+refreshDiv.appendChild(refreshImg);
+enterDiv.appendChild(enterImg);
 
 const toDoList = [
     {
@@ -28,6 +41,7 @@ const toDoList = [
     },
 ];
 
+
 const tasksRender = () => {
     const listWindow = document.querySelector('.list-window');
     let lists = '';
@@ -38,9 +52,11 @@ const tasksRender = () => {
   
     sortedList.forEach((entry) => {
       lists += `<div class="entry">
-        <input type="checkbox" name="status" id="status">
+        <div>
+        <input type="checkbox" class="boxes" name="status" id="status">
         <span id="detail">${entry.description}</span>
-        <img src='' alt='more-icon'>
+        </div>
+        <img src='${Thirdicon}' id='more-icon' alt='more-icon'>
         </div>`;
     });
   
