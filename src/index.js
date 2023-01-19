@@ -2,11 +2,8 @@ import './style.css';
 import Thirdicon from './images/more-vertical.svg';
 import Firsticon from './images/refresh-cw.svg';
 import Secondicon from './images/corner-down-left.svg';
+import { refreshDiv, enterDiv, refreshImg, enterImg } from './modules/variables';
 
-const refreshDiv = document.querySelector('#refresh-img');
-const enterDiv = document.querySelector('#enter-img');
-const refreshImg = new Image();
-const enterImg = new Image();
 refreshImg.src = Firsticon;
 enterImg.src = Secondicon;
 refreshDiv.appendChild(refreshImg);
@@ -52,7 +49,7 @@ const tasksRender = () => {
     lists += `<div class="entry">
         <div>
         <input type="checkbox" class="boxes" name="status" id="status">
-        <span id="detail">${entry.description}</span>
+        <input type="text" size="125" class="detail" value="${entry.description}"></input>
         </div>
         <img src='${Thirdicon}' id='more-icon' alt='more-icon'>
         </div>`;
