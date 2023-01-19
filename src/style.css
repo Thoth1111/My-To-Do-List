@@ -51,14 +51,6 @@ section {
   font-size: 16px;
 }
 
-/* .list-window {
-  background-color: #fff;
-  border: 3px solid rgba(224, 214, 204, 0.7);
-  box-shadow: 2px 2px #d3d3d3;
-  width: 60%;
-  padding: 10px;
-} */
-
 .entry {
   background-color: #fff;
   display: flex;

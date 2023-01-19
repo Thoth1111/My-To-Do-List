@@ -9,33 +9,33 @@ enterImg.src = Secondicon;
 refreshDiv.appendChild(refreshImg);
 enterDiv.appendChild(enterImg);
 
-const toDoList = [
-  {
-    index: 0,
-    description: 'Wash dishes',
-    completed: true,
-  },
-  {
-    index: 1,
-    description: 'Buy Groceries',
-    completed: true,
-  },
-  {
-    index: 2,
-    description: 'Meet with Lawyer',
-    completed: true,
-  },
-  {
-    index: 3,
-    description: 'Pick up Kids',
-    completed: true,
-  },
-  {
-    index: 4,
-    description: 'Attend virtual coding conference',
-    completed: true,
-  },
-];
+// const toDoList = [
+//   {
+//     index: 0,
+//     description: 'Wash dishes',
+//     completed: true,
+//   },
+//   {
+//     index: 1,
+//     description: 'Buy Groceries',
+//     completed: true,
+//   },
+//   {
+//     index: 2,
+//     description: 'Meet with Lawyer',
+//     completed: true,
+//   },
+//   {
+//     index: 3,
+//     description: 'Pick up Kids',
+//     completed: true,
+//   },
+//   {
+//     index: 4,
+//     description: 'Attend virtual coding conference',
+//     completed: true,
+//   },
+// ];
 
 const tasksRender = () => {
   const listWindow = document.querySelector('.list-window');
