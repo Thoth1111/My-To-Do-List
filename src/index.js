@@ -2,7 +2,7 @@ import './style.css';
 import Thirdicon from './images/more-vertical.svg';
 import Firsticon from './images/refresh-cw.svg';
 import Secondicon from './images/corner-down-left.svg';
-import { refreshDiv, enterDiv, refreshImg, enterImg } from './modules/variables';
+import { toDoList, refreshDiv, enterDiv, refreshImg, enterImg, listSort } from './modules/variables';
 
 refreshImg.src = Firsticon;
 enterImg.src = Secondicon;
@@ -37,25 +37,67 @@ enterDiv.appendChild(enterImg);
 //   },
 // ];
 
-const tasksRender = () => {
-  const listWindow = document.querySelector('.list-window');
-  let lists = '';
+class Task {
+  constructor (description) {
+    this.description = description;
+    complete = false;
+    id = toDoList.length + 1;
+  }
+}
 
-  const listSort = (arr) => arr.slice().sort((a, b) => a.index - b.index);
+class Manager {
+  constructor (toDoList) {
+    this.toDoList = toDoList;
+  }
 
-  const sortedList = listSort(toDoList);
+  listAddition() {
+    const listItem = new Task(description.value);
+    if (!this.toDoList) {
+      this.toDoList = [];
+    }
+    this.toDoList.push(listItem);
+    localStorage.setItem('compiled', JSON.stringify(this.toDoList));
+    this.listRender();
+  }
 
-  sortedList.forEach((entry) => {
-    lists += `<div class="entry">
+  listRender() {
+    const listWindow = document.querySelector('.list-window');
+    let lists = '';
+    const sortedList = listSort(toDoList);
+    sortedList.forEach((entry) => {
+      lists += 
+      `<div class="entry">
         <div>
         <input type="checkbox" class="boxes" name="status" id="status">
         <input type="text" size="125" class="detail" value="${entry.description}"></input>
         </div>
         <img src='${Thirdicon}' id='more-icon' alt='more-icon'>
-        </div>`;
-  });
+      </div>`;
+    })
+    listWindow.innerHTML = lists;    
+  }
 
-  listWindow.innerHTML = lists;
-};
+}
+
+// const tasksRender = () => {
+//   const listWindow = document.querySelector('.list-window');
+//   let lists = '';
+
+//   const listSort = (arr) => arr.slice().sort((a, b) => a.index - b.index);
+
+//   const sortedList = listSort(toDoList);
+
+//   sortedList.forEach((entry) => {
+//     lists += `<div class="entry">
+//         <div>
+//         <input type="checkbox" class="boxes" name="status" id="status">
+//         <input type="text" size="125" class="detail" value="${entry.description}"></input>
+//         </div>
+//         <img src='${Thirdicon}' id='more-icon' alt='more-icon'>
+//         </div>`;
+//   });
+
+//   listWindow.innerHTML = lists;
+// };
 
 window.addEventListener('load', tasksRender);
