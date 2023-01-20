@@ -39,25 +39,42 @@ class Manager {
         <input type="checkbox" class="boxes" name="status" id="status">
         <input type="text" size="125" class="detail" value="${entry.description}"></input>
         </div>
-        <img src='${Thirdicon}' id='more-icon' alt='more-icon'>
-        <img src='${Fourthicon}' class='trash-icon' id='${entry.id}' alt='more-icon'>
+        <img src='${Fourthicon}' class='trash-icon' id='${entry.index}'>
+        <img src='${Thirdicon}' class='dots' id='${entry.index}'>
       </div>`;
     })
     listWindow.innerHTML = lists;
-    // const dispose = document.querySelector('.trash-icon');
-    // this.dump(dispose)    
+    const moreIcon = document.querySelectorAll('.dots');
+    this.Options(moreIcon);  
+    const disposeBtn = document.querySelectorAll('.trash-icon');
+    this.listRemoval(disposeBtn);
   }
 
-  // dump(dispose) {
-  //   dispose.forEach((can) => {
-  //     can.addEventListener('click', () => {
-  //       const index = can.getattribute('id');
-  //       this.toDoList.splice(index,1);
-  //       localStorage.setItem('compiled', JSON.stringify(this.toDoList));
-  //       this.listRender();
-  //     })
-  //   })
-  // }
+  Options(moreIcon){
+    moreIcon.forEach((n) => {
+      n.addEventListener('click', () => {
+        const remover = n.previousElementSibling;
+        remover.classList.toggle('active');
+      })
+    })
+  }
+
+  listRemoval(disposeBtn) {
+    disposeBtn.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        console.log('clicked');
+        const index = btn.getAttribute('id');
+        this.toDoList.splice(index, 1);
+        if (this.toDoList.length > 0) {
+          this.toDoList.forEach((entry, i) => {
+            entry.index = i;
+          });
+        }
+        localStorage.setItem('compiled', JSON.stringify(this.toDoList));
+        this.listRender();
+      })
+    })   
+  }
 }
 
 const plan = new Manager();

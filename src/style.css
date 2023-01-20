@@ -75,20 +75,14 @@ section {
   font-size: 16px;
 }
 
-.more-icon.active {
-  display: block;
-}
-
-.more-icon {
-  display: none;
-}
-
-.trash-icon {
-  display: none;
-}
+.trash-icon { 
+   display: none;
+} 
 
 .trash-icon.active {
   display: block;
+  position: relative;
+  left: 90px;
 }
 
 #clear-done {
