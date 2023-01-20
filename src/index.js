@@ -1,64 +1,109 @@
 import './style.css';
-import Thirdicon from './images/more-vertical.svg';
 import Firsticon from './images/refresh-cw.svg';
 import Secondicon from './images/corner-down-left.svg';
+import Thirdicon from './images/more-vertical.svg';
+import Fourthicon from './images/trash-2.svg';
+import {
+  toDoList, refreshDiv, enterDiv, refreshImg, enterImg, listSort, addInput, listWindow,
+} from './modules/variables.js';
 
-const refreshDiv = document.querySelector('#refresh-img');
-const enterDiv = document.querySelector('#enter-img');
-const refreshImg = new Image();
-const enterImg = new Image();
 refreshImg.src = Firsticon;
 enterImg.src = Secondicon;
 refreshDiv.appendChild(refreshImg);
 enterDiv.appendChild(enterImg);
 
-const toDoList = [
-  {
-    index: 0,
-    description: 'Wash dishes',
-    completed: true,
-  },
-  {
-    index: 1,
-    description: 'Buy Groceries',
-    completed: true,
-  },
-  {
-    index: 2,
-    description: 'Meet with Lawyer',
-    completed: true,
-  },
-  {
-    index: 3,
-    description: 'Pick up Kids',
-    completed: true,
-  },
-  {
-    index: 4,
-    description: 'Attend virtual coding conference',
-    completed: true,
-  },
-];
+function Options(items) {
+  items.forEach((n) => {
+    n.addEventListener('click', () => {
+      const remover = n.previousElementSibling;
+      remover.classList.toggle('active');
+    });
+  });
+}
 
-const tasksRender = () => {
-  const listWindow = document.querySelector('.list-window');
-  let lists = '';
+class Manager {
+  constructor() {
+    this.toDoList = toDoList;
+  }
 
-  const listSort = (arr) => arr.slice().sort((a, b) => a.index - b.index);
+  listAddition() {
+    if (!this.toDoList) {
+      this.toDoList = [];
+    }
+    const entry = {
+      description: addInput.value,
+      index: this.toDoList.length,
+      complete: false,
+    };
+    this.toDoList = [...this.toDoList, entry];
+    localStorage.setItem('compiled', JSON.stringify(this.toDoList));
+    this.listRender();
+  }
 
-  const sortedList = listSort(toDoList);
-
-  sortedList.forEach((entry) => {
-    lists += `<div class="entry">
+  listRender() {
+    let lists = '';
+    const sortedList = listSort(this.toDoList);
+    sortedList.forEach((entry) => {
+      lists
+      += `<div class="entry">
         <div>
         <input type="checkbox" class="boxes" name="status" id="status">
-        <span id="detail">${entry.description}</span>
+        <input type="text" size="125" class="detail" id="${entry.index}" value="${entry.description}"></input>
         </div>
-        <img src='${Thirdicon}' id='more-icon' alt='more-icon'>
-        </div>`;
-  });
+        <img src='${Fourthicon}' class='trash-icon' id='${entry.index}'>
+        <img src='${Thirdicon}' class='dots' id='${entry.index}'>
+      </div>`;
+    });
+    listWindow.innerHTML = lists;
+    const moreIcon = document.querySelectorAll('.dots');
+    Options(moreIcon);
+    const disposeBtn = document.querySelectorAll('.trash-icon');
+    this.listRemoval(disposeBtn);
+    const details = document.querySelectorAll('.detail');
+    this.update(details);
+  }
 
-  listWindow.innerHTML = lists;
-};
+  listRemoval(disposeBtn) {
+    disposeBtn.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const index = btn.getAttribute('id');
+        this.toDoList.splice(index, 1);
+        if (this.toDoList.length > 0) {
+          this.toDoList.forEach((entry, i) => {
+            entry.index = i;
+          });
+        }
+        localStorage.setItem('compiled', JSON.stringify(this.toDoList));
+        this.listRender();
+      });
+    });
+  }
 
-window.addEventListener('load', tasksRender);
+  update(details) {
+    details.forEach((text) => {
+      text.addEventListener('keyup', (e) => {
+        if (e.key !== 'Enter' || !text.value) return;
+
+        const index = text.getAttribute('id');
+        this.toDoList[index].description = text.value;
+        localStorage.setItem('compiled', JSON.stringify(this.toDoList));
+        this.listRender();
+      });
+    });
+  }
+}
+
+const plan = new Manager();
+window.addEventListener('load', () => { plan.listRender(); });
+
+addInput.addEventListener('keyup', (e) => {
+  if (e.key !== 'Enter' || !addInput.value) return;
+  plan.listAddition();
+  addInput.value = '';
+});
+
+enterImg.addEventListener('click', () => {
+  if (!addInput.value) return;
+  plan.listAddition();
+  addInput.value = '';
+});
