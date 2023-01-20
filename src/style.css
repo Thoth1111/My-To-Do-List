@@ -75,9 +75,9 @@ section {
   font-size: 16px;
 }
 
-.trash-icon { 
-   display: none;
-} 
+.trash-icon {
+  display: none;
+}
 
 .trash-icon.active {
   display: block;
