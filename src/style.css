@@ -75,6 +75,10 @@ section {
   font-size: 16px;
 }
 
+.detail.done {
+  text-decoration: line-through;
+}
+
 .trash-icon {
   display: none;
 }
