@@ -6,3 +6,4 @@ export const toDoList = JSON.parse(localStorage.getItem('compiled'));
 export const listSort = (arr) => arr.slice().sort((a, b) => a.index - b.index);
 export const addInput = document.querySelector('.add-input');
 export const listWindow = document.querySelector('.list-window');
+export const clearAll = document.querySelector('#clear-done');

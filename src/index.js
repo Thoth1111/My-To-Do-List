@@ -4,7 +4,7 @@ import Secondicon from './images/corner-down-left.svg';
 import Thirdicon from './images/more-vertical.svg';
 import Fourthicon from './images/trash-2.svg';
 import {
-  toDoList, refreshDiv, enterDiv, refreshImg, enterImg, listSort, addInput, listWindow,
+  toDoList, refreshDiv, enterDiv, refreshImg, enterImg, listSort, addInput, listWindow, clearAll,
 } from './modules/variables.js';
 
 refreshImg.src = Firsticon;
@@ -44,11 +44,21 @@ class Manager {
     let lists = '';
     const sortedList = listSort(this.toDoList);
     sortedList.forEach((entry) => {
+      let done;
+      let checked;
+      if (entry.complete === true) {
+        done = 'done';
+        checked = 'checked';
+      } else {
+        done = '';
+        checked = '';
+      }
+
       lists
       += `<div class="entry">
         <div>
-        <input type="checkbox" class="boxes" name="status" id="status">
-        <input type="text" size="125" class="detail" id="${entry.index}" value="${entry.description}"></input>
+        <input type="checkbox" class="boxes" ${checked} name="checkbox" id="${entry.index}">
+        <input type="text" size="125" class="detail ${done}" id="${entry.index}" value="${entry.description}"></input>
         </div>
         <img src='${Fourthicon}' class='trash-icon' id='${entry.index}'>
         <img src='${Thirdicon}' class='dots' id='${entry.index}'>
@@ -61,6 +71,8 @@ class Manager {
     this.listRemoval(disposeBtn);
     const details = document.querySelectorAll('.detail');
     this.update(details);
+    const status = document.querySelectorAll('.boxes');
+    this.mark(status);
   }
 
   listRemoval(disposeBtn) {
@@ -91,6 +103,39 @@ class Manager {
       });
     });
   }
+
+  mark(status) {
+    status.forEach((checker) => {
+      checker.addEventListener('change', () => {
+        const task = checker.nextElementSibling;
+        const index = task.getAttribute('id');
+        task.classList.toggle('done');
+        if (task.classList.contains('done')) {
+          this.toDoList[index].complete = true;
+        } else {
+          this.toDoList[index].complete = false;
+        }
+        localStorage.setItem('compiled', JSON.stringify(this.toDoList));
+        // this.listRender();
+      });
+    });
+  }
+
+  clear() {
+    this.toDoList = this.toDoList.filter((entry) => entry.complete === false);
+    this.toDoList = listSort(this.toDoList);
+    localStorage.setItem('compiled', JSON.stringify(this.toDoList));
+    this.resetIndex();
+    this.listRender();
+  }
+
+  resetIndex() {
+    for (let i = 0; i < this.toDoList.length; i += 1) {
+      this.toDoList[i].index = i;
+    }
+    localStorage.setItem('compiled', JSON.stringify(this.toDoList));
+    this.listRender();
+  }
 }
 
 const plan = new Manager();
@@ -106,4 +151,8 @@ enterImg.addEventListener('click', () => {
   if (!addInput.value) return;
   plan.listAddition();
   addInput.value = '';
+});
+
+clearAll.addEventListener('click', () => {
+  plan.clear();
 });
