@@ -4,7 +4,7 @@ import Secondicon from './images/corner-down-left.svg';
 import Thirdicon from './images/more-vertical.svg';
 import Fourthicon from './images/trash-2.svg';
 import {
-  toDoList, refreshDiv, enterDiv, refreshImg, enterImg, listSort, addInput, listWindow,
+  toDoList, refreshDiv, enterDiv, refreshImg, enterImg, listSort, addInput, listWindow, clearAll,
 } from './modules/variables.js';
 
 refreshImg.src = Firsticon;
@@ -123,6 +123,13 @@ class Manager {
       })
     })
   }
+
+  clear() {
+    this.toDoList = this.toDoList.filter((entry) => entry.complete === false);
+    this.toDoList = listSort(this.toDoList);
+    localStorage.setItem('compiled', JSON.stringify(this.toDoList))
+    this.listRender();
+  }
 }
 
 const plan = new Manager();
@@ -139,3 +146,8 @@ enterImg.addEventListener('click', () => {
   plan.listAddition();
   addInput.value = '';
 });
+
+clearAll.addEventListener('click', () => {
+  console.log('clicked');
+  plan.clear();
+})
