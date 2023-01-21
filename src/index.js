@@ -41,15 +41,14 @@ class Manager {
   }
 
   listRender() {
-    let lists = '';    
+    let lists = '';
     const sortedList = listSort(this.toDoList);
     sortedList.forEach((entry) => {
-      
       let done;
       let checked;
-      if(entry.complete === true) {
+      if (entry.complete === true) {
         done = 'done';
-        checked = 'checked'
+        checked = 'checked';
       } else {
         done = '';
         checked = '';
@@ -110,24 +109,31 @@ class Manager {
       checker.addEventListener('change', () => {
         const task = checker.nextElementSibling;
         const index = task.getAttribute('id');
-        console.log(task);   
         task.classList.toggle('done');
         if (task.classList.contains('done')) {
           this.toDoList[index].complete = true;
         } else {
           this.toDoList[index].complete = false;
         }
-        console.log(this.toDoList[index].complete)
-        localStorage.setItem('compiled', JSON.stringify(this.toDoList))
+        localStorage.setItem('compiled', JSON.stringify(this.toDoList));
         // this.listRender();
-      })
-    })
+      });
+    });
   }
 
   clear() {
     this.toDoList = this.toDoList.filter((entry) => entry.complete === false);
     this.toDoList = listSort(this.toDoList);
-    localStorage.setItem('compiled', JSON.stringify(this.toDoList))
+    localStorage.setItem('compiled', JSON.stringify(this.toDoList));
+    this.resetIndex();
+    this.listRender();
+  }
+
+  resetIndex() {
+    for (let i = 0; i < this.toDoList.length; i += 1) {
+      this.toDoList[i].index = i;
+    }
+    localStorage.setItem('compiled', JSON.stringify(this.toDoList));
     this.listRender();
   }
 }
@@ -148,6 +154,5 @@ enterImg.addEventListener('click', () => {
 });
 
 clearAll.addEventListener('click', () => {
-  console.log('clicked');
   plan.clear();
-})
+});
