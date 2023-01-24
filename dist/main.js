@@ -110,13 +110,53 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/modules/images/corner-down-left.svg":
+/*!*************************************************!*\
+  !*** ./src/modules/images/corner-down-left.svg ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9ImZlYXRoZXIgZmVhdGhlci1jb3JuZXItZG93bi1sZWZ0Ij48cG9seWxpbmUgcG9pbnRzPSI5IDEwIDQgMTUgOSAyMCI+PC9wb2x5bGluZT48cGF0aCBkPSJNMjAgNHY3YTQgNCAwIDAgMS00IDRINCI+PC9wYXRoPjwvc3ZnPg==\");\n\n//# sourceURL=webpack://my-to-do-list/./src/modules/images/corner-down-left.svg?");
+
+/***/ }),
+
+/***/ "./src/modules/images/more-vertical.svg":
+/*!**********************************************!*\
+  !*** ./src/modules/images/more-vertical.svg ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9ImZlYXRoZXIgZmVhdGhlci1tb3JlLXZlcnRpY2FsIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxIj48L2NpcmNsZT48Y2lyY2xlIGN4PSIxMiIgY3k9IjUiIHI9IjEiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTkiIHI9IjEiPjwvY2lyY2xlPjwvc3ZnPg==\");\n\n//# sourceURL=webpack://my-to-do-list/./src/modules/images/more-vertical.svg?");
+
+/***/ }),
+
+/***/ "./src/modules/images/refresh-cw.svg":
+/*!*******************************************!*\
+  !*** ./src/modules/images/refresh-cw.svg ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9ImZlYXRoZXIgZmVhdGhlci1yZWZyZXNoLWN3Ij48cG9seWxpbmUgcG9pbnRzPSIyMyA0IDIzIDEwIDE3IDEwIj48L3BvbHlsaW5lPjxwb2x5bGluZSBwb2ludHM9IjEgMjAgMSAxNCA3IDE0Ij48L3BvbHlsaW5lPjxwYXRoIGQ9Ik0zLjUxIDlhOSA5IDAgMCAxIDE0Ljg1LTMuMzZMMjMgMTBNMSAxNGw0LjY0IDQuMzZBOSA5IDAgMCAwIDIwLjQ5IDE1Ij48L3BhdGg+PC9zdmc+\");\n\n//# sourceURL=webpack://my-to-do-list/./src/modules/images/refresh-cw.svg?");
+
+/***/ }),
+
+/***/ "./src/modules/images/trash-2.svg":
+/*!****************************************!*\
+  !*** ./src/modules/images/trash-2.svg ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9ImZlYXRoZXIgZmVhdGhlci10cmFzaC0yIj48cG9seWxpbmUgcG9pbnRzPSIzIDYgNSA2IDIxIDYiPjwvcG9seWxpbmU+PHBhdGggZD0iTTE5IDZ2MTRhMiAyIDAgMCAxLTIgMkg3YTIgMiAwIDAgMS0yLTJWNm0zIDBWNGEyIDIgMCAwIDEgMi0yaDRhMiAyIDAgMCAxIDIgMnYyIj48L3BhdGg+PGxpbmUgeDE9IjEwIiB5MT0iMTEiIHgyPSIxMCIgeTI9IjE3Ij48L2xpbmU+PGxpbmUgeDE9IjE0IiB5MT0iMTEiIHgyPSIxNCIgeTI9IjE3Ij48L2xpbmU+PC9zdmc+\");\n\n//# sourceURL=webpack://my-to-do-list/./src/modules/images/trash-2.svg?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _images_refresh_cw_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/refresh-cw.svg */ \"./src/images/refresh-cw.svg\");\n/* harmony import */ var _images_corner_down_left_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/corner-down-left.svg */ \"./src/images/corner-down-left.svg\");\n/* harmony import */ var _images_more_vertical_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/more-vertical.svg */ \"./src/images/more-vertical.svg\");\n/* harmony import */ var _images_trash_2_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/trash-2.svg */ \"./src/images/trash-2.svg\");\n/* harmony import */ var _modules_variables_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/variables.js */ \"./src/modules/variables.js\");\n\n\n\n\n\n\n\n_modules_variables_js__WEBPACK_IMPORTED_MODULE_5__.refreshImg.src = _images_refresh_cw_svg__WEBPACK_IMPORTED_MODULE_1__;\n_modules_variables_js__WEBPACK_IMPORTED_MODULE_5__.enterImg.src = _images_corner_down_left_svg__WEBPACK_IMPORTED_MODULE_2__;\n_modules_variables_js__WEBPACK_IMPORTED_MODULE_5__.refreshDiv.appendChild(_modules_variables_js__WEBPACK_IMPORTED_MODULE_5__.refreshImg);\n_modules_variables_js__WEBPACK_IMPORTED_MODULE_5__.enterDiv.appendChild(_modules_variables_js__WEBPACK_IMPORTED_MODULE_5__.enterImg);\n\nfunction Options(items) {\n  items.forEach((n) => {\n    n.addEventListener('click', () => {\n      const remover = n.previousElementSibling;\n      remover.classList.toggle('active');\n    });\n  });\n}\n\nclass Manager {\n  constructor() {\n    this.toDoList = _modules_variables_js__WEBPACK_IMPORTED_MODULE_5__.toDoList;\n  }\n\n  listAddition() {\n    if (!this.toDoList) {\n      this.toDoList = [];\n    }\n    const entry = {\n      description: _modules_variables_js__WEBPACK_IMPORTED_MODULE_5__.addInput.value,\n      index: this.toDoList.length,\n      complete: false,\n    };\n    this.toDoList = [...this.toDoList, entry];\n    localStorage.setItem('compiled', JSON.stringify(this.toDoList));\n    this.listRender();\n  }\n\n  listRender() {\n    let lists = '';\n    const sortedList = (0,_modules_variables_js__WEBPACK_IMPORTED_MODULE_5__.listSort)(this.toDoList);\n    sortedList.forEach((entry) => {\n      let done;\n      let checked;\n      if (entry.complete === true) {\n        done = 'done';\n        checked = 'checked';\n      } else {\n        done = '';\n        checked = '';\n      }\n\n      lists\n      += `<div class=\"entry\">\n        <div>\n        <input type=\"checkbox\" class=\"boxes\" ${checked} name=\"checkbox\" id=\"${entry.index}\">\n        <input type=\"text\" size=\"125\" class=\"detail ${done}\" id=\"${entry.index}\" value=\"${entry.description}\"></input>\n        </div>\n        <img src='${_images_trash_2_svg__WEBPACK_IMPORTED_MODULE_4__}' class='trash-icon' id='${entry.index}'>\n        <img src='${_images_more_vertical_svg__WEBPACK_IMPORTED_MODULE_3__}' class='dots' id='${entry.index}'>\n      </div>`;\n    });\n    _modules_variables_js__WEBPACK_IMPORTED_MODULE_5__.listWindow.innerHTML = lists;\n    const moreIcon = document.querySelectorAll('.dots');\n    Options(moreIcon);\n    const disposeBtn = document.querySelectorAll('.trash-icon');\n    this.listRemoval(disposeBtn);\n    const details = document.querySelectorAll('.detail');\n    this.update(details);\n    const status = document.querySelectorAll('.boxes');\n    this.mark(status);\n  }\n\n  listRemoval(disposeBtn) {\n    disposeBtn.forEach((btn) => {\n      btn.addEventListener('click', () => {\n        const index = btn.getAttribute('id');\n        this.toDoList.splice(index, 1);\n        if (this.toDoList.length > 0) {\n          this.toDoList.forEach((entry, i) => {\n            entry.index = i;\n          });\n        }\n        localStorage.setItem('compiled', JSON.stringify(this.toDoList));\n        this.listRender();\n      });\n    });\n  }\n\n  update(details) {\n    details.forEach((text) => {\n      text.addEventListener('keyup', (e) => {\n        if (e.key !== 'Enter' || !text.value) return;\n\n        const index = text.getAttribute('id');\n        this.toDoList[index].description = text.value;\n        localStorage.setItem('compiled', JSON.stringify(this.toDoList));\n        this.listRender();\n      });\n    });\n  }\n\n  mark(status) {\n    status.forEach((checker) => {\n      checker.addEventListener('change', () => {\n        const task = checker.nextElementSibling;\n        const index = task.getAttribute('id');\n        task.classList.toggle('done');\n        if (task.classList.contains('done')) {\n          this.toDoList[index].complete = true;\n        } else {\n          this.toDoList[index].complete = false;\n        }\n        localStorage.setItem('compiled', JSON.stringify(this.toDoList));\n        // this.listRender();\n      });\n    });\n  }\n\n  clear() {\n    this.toDoList = this.toDoList.filter((entry) => entry.complete === false);\n    this.toDoList = (0,_modules_variables_js__WEBPACK_IMPORTED_MODULE_5__.listSort)(this.toDoList);\n    localStorage.setItem('compiled', JSON.stringify(this.toDoList));\n    this.resetIndex();\n    this.listRender();\n  }\n\n  resetIndex() {\n    for (let i = 0; i < this.toDoList.length; i += 1) {\n      this.toDoList[i].index = i;\n    }\n    localStorage.setItem('compiled', JSON.stringify(this.toDoList));\n    this.listRender();\n  }\n}\n\nconst plan = new Manager();\nwindow.addEventListener('load', () => { plan.listRender(); });\n\n_modules_variables_js__WEBPACK_IMPORTED_MODULE_5__.addInput.addEventListener('keyup', (e) => {\n  if (e.key !== 'Enter' || !_modules_variables_js__WEBPACK_IMPORTED_MODULE_5__.addInput.value) return;\n  plan.listAddition();\n  _modules_variables_js__WEBPACK_IMPORTED_MODULE_5__.addInput.value = '';\n});\n\n_modules_variables_js__WEBPACK_IMPORTED_MODULE_5__.enterImg.addEventListener('click', () => {\n  if (!_modules_variables_js__WEBPACK_IMPORTED_MODULE_5__.addInput.value) return;\n  plan.listAddition();\n  _modules_variables_js__WEBPACK_IMPORTED_MODULE_5__.addInput.value = '';\n});\n\n_modules_variables_js__WEBPACK_IMPORTED_MODULE_5__.clearAll.addEventListener('click', () => {\n  plan.clear();\n});\n\n//# sourceURL=webpack://my-to-do-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_images_refresh_cw_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/images/refresh-cw.svg */ \"./src/modules/images/refresh-cw.svg\");\n/* harmony import */ var _modules_images_corner_down_left_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/images/corner-down-left.svg */ \"./src/modules/images/corner-down-left.svg\");\n/* harmony import */ var _modules_variables_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/variables.js */ \"./src/modules/variables.js\");\n\r\n\r\n\r\n\r\n\r\nconst refreshDiv = document.querySelector('#refresh-img');\r\nconst enterDiv = document.querySelector('#enter-img');\r\nconst refreshImg = new Image();\r\nconst enterImg = new Image();\r\nconst clearAll = document.querySelector('#clear-done');\r\n\r\nrefreshImg.src = _modules_images_refresh_cw_svg__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\r\nenterImg.src = _modules_images_corner_down_left_svg__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\r\nrefreshDiv.appendChild(refreshImg);\r\nenterDiv.appendChild(enterImg);\r\n\r\nconst plan = new _modules_variables_js__WEBPACK_IMPORTED_MODULE_3__.Manager();\r\nwindow.addEventListener('load', () => { plan.listRender(); });\r\n\r\n_modules_variables_js__WEBPACK_IMPORTED_MODULE_3__.addInput.addEventListener('keyup', (e) => {\r\n  if (e.key === 'Enter' && _modules_variables_js__WEBPACK_IMPORTED_MODULE_3__.addInput.value) {\r\n  plan.listAddition();\r\n  _modules_variables_js__WEBPACK_IMPORTED_MODULE_3__.addInput.value = '';\r\n} else {\r\n  return\r\n}\r\n});\r\n\r\nenterImg.addEventListener('click', () => {\r\n  if (_modules_variables_js__WEBPACK_IMPORTED_MODULE_3__.addInput.value) {\r\n    plan.listAddition();\r\n    _modules_variables_js__WEBPACK_IMPORTED_MODULE_3__.addInput.value = '';\r\n  } else {\r\n    return;\r\n  }  \r\n});\r\n\r\nclearAll.addEventListener('click', () => {\r\n  plan.clear();\r\n});\n\n//# sourceURL=webpack://my-to-do-list/./src/index.js?");
 
 /***/ }),
 
@@ -126,47 +166,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"addInput\": () => (/* binding */ addInput),\n/* harmony export */   \"clearAll\": () => (/* binding */ clearAll),\n/* harmony export */   \"enterDiv\": () => (/* binding */ enterDiv),\n/* harmony export */   \"enterImg\": () => (/* binding */ enterImg),\n/* harmony export */   \"listSort\": () => (/* binding */ listSort),\n/* harmony export */   \"listWindow\": () => (/* binding */ listWindow),\n/* harmony export */   \"refreshDiv\": () => (/* binding */ refreshDiv),\n/* harmony export */   \"refreshImg\": () => (/* binding */ refreshImg),\n/* harmony export */   \"toDoList\": () => (/* binding */ toDoList)\n/* harmony export */ });\nconst refreshDiv = document.querySelector('#refresh-img');\nconst enterDiv = document.querySelector('#enter-img');\nconst refreshImg = new Image();\nconst enterImg = new Image();\nconst toDoList = JSON.parse(localStorage.getItem('compiled'));\nconst listSort = (arr) => arr.slice().sort((a, b) => a.index - b.index);\nconst addInput = document.querySelector('.add-input');\nconst listWindow = document.querySelector('.list-window');\nconst clearAll = document.querySelector('#clear-done');\n\n//# sourceURL=webpack://my-to-do-list/./src/modules/variables.js?");
-
-/***/ }),
-
-/***/ "./src/images/corner-down-left.svg":
-/*!*****************************************!*\
-  !*** ./src/images/corner-down-left.svg ***!
-  \*****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"9d5ef756445602685c9f.svg\";\n\n//# sourceURL=webpack://my-to-do-list/./src/images/corner-down-left.svg?");
-
-/***/ }),
-
-/***/ "./src/images/more-vertical.svg":
-/*!**************************************!*\
-  !*** ./src/images/more-vertical.svg ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"6d062ec001e5c71cd155.svg\";\n\n//# sourceURL=webpack://my-to-do-list/./src/images/more-vertical.svg?");
-
-/***/ }),
-
-/***/ "./src/images/refresh-cw.svg":
-/*!***********************************!*\
-  !*** ./src/images/refresh-cw.svg ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"228d4ce3c0b25dd46812.svg\";\n\n//# sourceURL=webpack://my-to-do-list/./src/images/refresh-cw.svg?");
-
-/***/ }),
-
-/***/ "./src/images/trash-2.svg":
-/*!********************************!*\
-  !*** ./src/images/trash-2.svg ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"63b2215180e59191412b.svg\";\n\n//# sourceURL=webpack://my-to-do-list/./src/images/trash-2.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Manager\": () => (/* binding */ Manager),\n/* harmony export */   \"addInput\": () => (/* binding */ addInput)\n/* harmony export */ });\n/* harmony import */ var _images_more_vertical_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/more-vertical.svg */ \"./src/modules/images/more-vertical.svg\");\n/* harmony import */ var _images_trash_2_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/trash-2.svg */ \"./src/modules/images/trash-2.svg\");\n\r\n\r\nconst toDoList = JSON.parse(localStorage.getItem('compiled'));\r\nconst listSort = (arr) => arr.slice().sort((a, b) => a.index - b.index);\r\nconst listWindow = document.querySelector('.list-window');\r\n\r\nconst Options = (items) => {\r\n    items.forEach((n) => {\r\n      n.addEventListener('click', () => {\r\n        const remover = n.previousElementSibling;\r\n        remover.classList.toggle('active');\r\n      });\r\n    });\r\n  }\r\n\r\nconst addInput = document.querySelector('.add-input');\r\n\r\nclass Manager {\r\n    constructor() {\r\n      this.toDoList = toDoList || [];\r\n    }\r\n  \r\n    listAddition() {\r\n      const entry = {\r\n        description: addInput.value,\r\n        index: this.toDoList.length,\r\n        complete: false,\r\n      };\r\n      this.toDoList = [...this.toDoList, entry];\r\n      localStorage.setItem('compiled', JSON.stringify(this.toDoList));\r\n      this.listRender();\r\n    }\r\n  \r\n    listRender() {\r\n      let lists = '';\r\n      const sortedList = listSort(this.toDoList);\r\n      sortedList.forEach((entry) => {\r\n        let done;\r\n        let checked;\r\n        if (entry.complete === true) {\r\n          done = 'done';\r\n          checked = 'checked';\r\n        } else {\r\n          done = '';\r\n          checked = '';\r\n        }  \r\n        lists\r\n        += `<div class=\"entry\">\r\n          <div>\r\n          <input type=\"checkbox\" class=\"boxes\" ${checked} name=\"checkbox\">\r\n          <input type=\"text\" size=\"125\" class=\"detail ${done}\" id=\"${entry.index}\" value=\"${entry.description}\"></input>\r\n          </div>\r\n          <img src='${_images_trash_2_svg__WEBPACK_IMPORTED_MODULE_1__[\"default\"]}' class='trash-icon' id='${entry.index}'>\r\n          <img src='${_images_more_vertical_svg__WEBPACK_IMPORTED_MODULE_0__[\"default\"]}' class='dots' id='${entry.index}'>\r\n        </div>`;\r\n      });\r\n      listWindow.innerHTML = lists;\r\n      const moreIcon = document.querySelectorAll('.dots');\r\n      Options(moreIcon);\r\n      const disposeBtn = document.querySelectorAll('.trash-icon');\r\n      this.listRemoval(disposeBtn);\r\n      const details = document.querySelectorAll('.detail');\r\n      this.update(details);\r\n      const status = document.querySelectorAll('.boxes');\r\n      this.mark(status);\r\n    }\r\n  \r\n    listRemoval(disposeBtn) {\r\n      disposeBtn.forEach((btn) => {\r\n        btn.addEventListener('click', () => {\r\n          const index = btn.getAttribute('id');\r\n          this.toDoList.splice(index, 1);\r\n          localStorage.setItem('compiled', JSON.stringify(this.toDoList));\r\n          this.resetIndex();\r\n        });\r\n      });\r\n    }\r\n  \r\n    update(details) {\r\n      details.forEach((text) => {\r\n        text.addEventListener('keyup', (e) => {\r\n          if (e.key === 'Enter' && text.value) { \r\n          const index = text.getAttribute('id');\r\n          this.toDoList[index].description = text.value;\r\n          localStorage.setItem('compiled', JSON.stringify(this.toDoList));\r\n          this.listRender();\r\n          } else {\r\n            return\r\n          }\r\n        });\r\n      });\r\n    }\r\n  \r\n    mark(status) {\r\n      status.forEach((checker) => {\r\n        checker.addEventListener('change', () => {\r\n          const task = checker.nextElementSibling;\r\n          const index = task.getAttribute('id');\r\n          task.classList.toggle('done');\r\n          if (task.classList.contains('done')) {\r\n            this.toDoList[index].complete = true;\r\n          } else {\r\n            this.toDoList[index].complete = false;\r\n          }\r\n          localStorage.setItem('compiled', JSON.stringify(this.toDoList));\r\n        });\r\n      });\r\n    }\r\n  \r\n    clear() {\r\n      this.toDoList = this.toDoList.filter((entry) => entry.complete === false);\r\n      localStorage.setItem('compiled', JSON.stringify(this.toDoList));\r\n      this.resetIndex();\r\n      this.listRender();\r\n    }\r\n  \r\n    resetIndex() {\r\n        if (this.toDoList.length > 0) {\r\n            this.toDoList.forEach((entry, i) => {\r\n              entry.index = i;\r\n            });\r\n          }\r\n      localStorage.setItem('compiled', JSON.stringify(this.toDoList));\r\n      this.listRender();\r\n    }\r\n}\r\n  \n\n//# sourceURL=webpack://my-to-do-list/./src/modules/variables.js?");
 
 /***/ })
 
@@ -235,11 +235,6 @@ eval("module.exports = __webpack_require__.p + \"63b2215180e59191412b.svg\";\n\n
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		__webpack_require__.p = "/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */

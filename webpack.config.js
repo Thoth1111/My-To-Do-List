@@ -14,7 +14,7 @@ module.exports = {
     }),
   ],
   output: {
-    filename: '[name].js',
+    filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
     publicPath: '/',
@@ -27,8 +27,15 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+               limit: 8192,               
+             },
+          },
+      ],
       },
-    ],
+    ],    
   },
 };
