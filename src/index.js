@@ -75,14 +75,19 @@ class Manager {
     this.mark(status);
   }
 
+  updateIndex() {
+    for (let i = 0; i < this.toDoList.length; i += 1) {
+      this.toDoList[i].index = i;
+    }
+  }
+
   listRemoval(disposeBtn) {
     disposeBtn.forEach((btn) => {
       btn.addEventListener('click', () => {
         const index = btn.getAttribute('id');
         this.toDoList.splice(index, 1);
         if (this.toDoList.length > 0) {
-          this.toDoList.forEach((entry, i) => {
-            entry.index = i;
+          this.updateIndex();
           });
         }
         localStorage.setItem('compiled', JSON.stringify(this.toDoList));
@@ -116,7 +121,6 @@ class Manager {
           this.toDoList[index].complete = false;
         }
         localStorage.setItem('compiled', JSON.stringify(this.toDoList));
-        // this.listRender();
       });
     });
   }
@@ -130,9 +134,7 @@ class Manager {
   }
 
   resetIndex() {
-    for (let i = 0; i < this.toDoList.length; i += 1) {
-      this.toDoList[i].index = i;
-    }
+    this.updateIndex();
     localStorage.setItem('compiled', JSON.stringify(this.toDoList));
     this.listRender();
   }
