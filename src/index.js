@@ -137,7 +137,6 @@ class Manager {
     this.updateIndex();
     localStorage.setItem('compiled', JSON.stringify(this.toDoList));
     this.listRender();
-  }
 }
 
 const plan = new Manager();
